@@ -19,6 +19,10 @@ const EmployeeSchema = new Schema({
     type: String,
     required: true,
   },
+  nic: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now,

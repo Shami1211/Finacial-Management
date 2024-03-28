@@ -1,4 +1,4 @@
-const Item = require("../Model/EmployeeModel");
+const Employee = require("../Model/EmployeeModel"); // Assuming the correct path and file name for the Employee model
 
 
 const getAllEmployees = async (req, res, next) => {
