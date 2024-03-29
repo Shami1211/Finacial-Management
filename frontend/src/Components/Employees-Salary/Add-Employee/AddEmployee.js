@@ -42,12 +42,15 @@ function AddEmployee() {
   };
 
   const handleViewEmployees = () => {
-    navigate("/employeedetails");
+    navigate("/employeevalidates");
   };
 
   return (
     <div>
       <div className="employee-form-box">
+     
+            <button onClick={()=> (window.location.href='/adminlogin')} className="admin-login-btn">Admin</button> {/* Admin button */}
+         
         <h1 className="employee-form-topic">
           Add <span className="employee-form-us">Employee</span>
         </h1>
@@ -108,7 +111,7 @@ function AddEmployee() {
           </button>
         </form>
         <button type="button" className="view-employees-btn" onClick={handleViewEmployees}>
-          View Employees
+          View My Details
         </button>
       </div>
     </div>
